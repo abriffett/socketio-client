@@ -3,8 +3,8 @@
 This is a client interacting with a Socket.IO service providing search capability for Star Wars characters.
 
 ## Requirements
-Java 18 and Maven are installed
-JAVA_HOME environment variable is set (for Maven)
+- Java 18 and Maven are installed
+- JAVA_HOME environment variable is set (for Maven)
 
 ## To run
 Run 
