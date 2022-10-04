@@ -95,8 +95,9 @@ class SearchResult {
     public SearchResult(JSONObject json) throws JSONException {
             this.resultCount = json.getInt("resultCount");
             this.page = json.getInt("page");
-            // If we have results, grab the name and films, else put the error from the response in the error field.
-            if (resultCount > 0 && page > 0) {
+            // If we have non-negative result count and page, grab the name and films, else
+            // spec states it's an error, so we put the error from the response in the error field.
+            if (resultCount > -1 && page > -1) {
                 this.name = json.getString("name");
                 this.films = json.getString("films");
                 this.error = null;
