@@ -9,7 +9,7 @@ JAVA_HOME environment variable is set (for Maven)
 ## To run
 Run 
 
-`mvn exec:java`
+`mvn clean install exec:java`
 
 and this will start the application which will try to connect to the server on localhost:3000
 
