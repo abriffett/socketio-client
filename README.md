@@ -1,4 +1,4 @@
-# Valstro coding assignment
+# Socket.IO coding assignment
 
 This is a client interacting with a Socket.IO service providing search capability for Star Wars characters.
 
